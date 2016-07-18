@@ -30,10 +30,10 @@ module.exports = {
   		type: 'string'
   	},
 
-  // online: {
-  //     type: 'boolean',
-  //     defaultsTo: false
-  //   },
+  online: {
+      type: 'boolean',
+      defaultsTo: false
+    },
 
   admin: {
       type: 'boolean',
@@ -43,12 +43,11 @@ module.exports = {
   },
 
   // beforeValidation: function (values, next) {
-  //   if (typeof session.User.admin !== 'undefined') {
-  //     if (document.getElementById('box').checked) {
-  //       values.administrator = 'true';
-  //     } else {
+  //   if (typeof session.user.admin !== 'undefined') {
+  //     if (values.box === 'unchecked') {
   //       values.administrator = 'false';
-  //       console.log('true');
+  //     } else  if (values.box[1] === 'on') {
+  //       values.administrator = 'true';
   //     }
   //   }
   //    next();

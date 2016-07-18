@@ -22,9 +22,15 @@ module.exports = {
 				return res.redirect('/user/new');
 			}
 
-			// res.json(user);
-			// req.session.flash = {};
-			res.redirect('/user/show/'+ user.id);
+			req.session.authenticated = true;
+			req.session.User = user;
+
+			user.online = true;
+			user.save(function(err, user){
+				if(err) return next(err);
+
+				res.redirect('/user/show/'+ user.id);
+			});
 		});
 	},
 
