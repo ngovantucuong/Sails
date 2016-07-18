@@ -1,0 +1,55 @@
+/*.container {
+	float: none;
+    border-style: 6px solid red;
+    border-style: hidden;
+    background-color: lightgrey;
+    height: 187px;
+    width: 781px;
+    margin-left: 191px;
+}
+
+.jumbotron {
+	text-align: center;
+}
+
+h1{
+	font-size: 45px;
+}
+
+a.btn.btn-lg.btn-success{
+	font-size: 21px;
+}
+
+h2{
+	font-weight: normal;
+}
+
+.form-horizontal{
+    margin-left: 318px;
+    width: 558px;
+}
+
+.legend{
+    padding-left: 187px;
+    font-size: 24px;
+}*/
+.form-horizontal{
+    padding-left: 381px;
+    padding-top: 60px;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+.form-signin{
+    width: 316px;
+    /* padding-left: 40px; */
+    margin-left: 376px;
+    /* margin-top: 35px; */
+    padding-top: 52px;
+}
+
+.button{
+    margin-bottom: 24px;
+}
